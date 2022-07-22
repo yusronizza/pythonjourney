@@ -36,11 +36,11 @@ def main():
             text = input("Type your message:\n").lower()
             shift = int(input("Type the shift number:\n"))
             result = encrypt(text, shift)
-            print(result)
+            print("Encoded text is " + result)
         if (menu == 'decode'):
             text = input("Type your message:\n").lower()
             shift = int(input("Type the shift number:\n"))
             result = decrypt(text, shift)
-            print(result)
+            print("Decoded text is " + result)
         rerun = input("Do you want to run the app again? (Y/y or N/n)\n")
 main()
